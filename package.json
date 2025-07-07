@@ -8,14 +8,17 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:gh": "ng build --configuration production --base-href /merge-tactics-team-builder/",
-    "deploy": "npm run build:gh && npx angular-cli-ghpages --dir=dist/merge-tactics-team-builder"
+    "deploy": "npm run build:gh && npx angular-cli-ghpages --dir=dist/merge-tactics-team-builder/browser"
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^19.2.14",
+    "@angular/cdk": "^19.2.19",
     "@angular/common": "^19.2.0",
     "@angular/compiler": "^19.2.0",
     "@angular/core": "^19.2.0",
     "@angular/forms": "^19.2.0",
+    "@angular/material": "^19.2.19",
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
